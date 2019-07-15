@@ -5,6 +5,9 @@ function Import-SecurityFinding {
     .DESCRIPTION
         The Import-SecurityFinding cmdlet submits the latest Windows Defender Antivirus scan alert 
         from the Windows Event log from (event ID: 1116) and submits it to AWS Security Hub.
+    .EXAMPLE
+        Import-SecurityFinding -AwsRegion 'eu-west-2'
+        Imports the Windows Defender log into AWS Security Hub eu-west-2 (London) region 
     #>
     [CmdletBinding()]
     param(

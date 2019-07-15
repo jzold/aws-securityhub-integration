@@ -48,7 +48,6 @@ function Import-SecurityFinding {
           });
       SchemaVersion = '2018-10-08';
       Severity = @{
-          Product = 2.5;
           Normalized = 100
         };
        Title = 'Windows Defender Antivirus malware alert!';
